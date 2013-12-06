@@ -1,6 +1,6 @@
 class mongodb::params {
   case $::operatingsystem {
-        /(Redhat|CentOS|Fedora)/: {
+        /(Redhat|CentOS|Fedora|Amazon)/: {
           $supported  = true
           $package    = 'mongo18-10gen-server'
           $service    = 'mongod'
